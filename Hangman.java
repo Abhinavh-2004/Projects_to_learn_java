@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class Hangman {
@@ -132,7 +133,10 @@ public class Hangman {
                 System.out.println("Bingo");
                 break;
             }
+            System.out.printf("Enter a character as guess: ");
+
             String user = inp.next();
+            System.out.printf("\n");
             if(user.length() > 1){
                 System.out.println("No, give me a character");
                 continue;
