@@ -141,6 +141,10 @@ public class Hangman {
                 System.out.println("No, give me a character");
                 continue;
             }
+            if(!(user.charAt(0) >= 65 && user.charAt(0)<=122) && (user.charAt(0) != 95 && user.charAt(0) != 96)){
+                System.out.println("NO, enter a character");
+                continue;
+            }
             if(set.contains(user.charAt(0))){
                 displayCharacter(user.charAt(0),computer,userValid);
             }
